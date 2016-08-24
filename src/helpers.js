@@ -1,4 +1,4 @@
-import XLSX from 'xlsx';
+var XLSX = require('xlsx');
 
 const isBoolean = maybeBoolean => typeof maybeBoolean === 'boolean';
 const isNumber = maybeNumber => typeof maybeNumber === 'number';
@@ -51,4 +51,9 @@ const buildSheetFromMatrix = (data, options = {}) => {
   return workSheet;
 };
 
-export {buildSheetFromMatrix, isBoolean, isNumber, isString};
+module.exports = {
+    buildSheetFromMatrix,
+    isBoolean,
+    isNumber,
+    isString
+};
