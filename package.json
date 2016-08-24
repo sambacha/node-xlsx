@@ -17,7 +17,7 @@
   "repository": "github:mgcrea/node-xlsx",
   "license": "Apache-2.0",
   "dependencies": {
-    "xlsx": "^0.8.0"
+    "xlsx-style": "^0.8.13"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.3.3",
