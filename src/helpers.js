@@ -36,6 +36,11 @@ const buildSheetFromMatrix = (data, options = {}) => {
       } else {
         cell.t = 's';
       }
+
+      if (options.cellCallback) {
+          options.cellCallback(cell, C, R);
+      }
+      
       workSheet[cellRef] = cell;
     }
   }
