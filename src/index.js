@@ -1,4 +1,4 @@
-var XLSX = require('xlsx');
+var XLSX = require('xlsx-style');
 var helpers = require('./helpers');
 var Workbook = require('./workbook');
 
