@@ -3,7 +3,7 @@
   "author": "Olivier Louvignes <olivier@mg-crea.com>",
   "version": "0.7.2",
   "description": "NodeJS Excel files parser & builder",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "npm run test:watch",
     "test": "mocha",
