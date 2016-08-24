@@ -1,6 +1,6 @@
 
 class Workbook {
-    construct() {
+    constructor() {
         this.SheetNames = [];
         this.Sheets = {};
     }
