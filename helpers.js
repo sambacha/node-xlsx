@@ -1,4 +1,5 @@
 var XLSX = require('xlsx-style');
+var StyledContent = require('./styledcontent');
 
 const isBoolean = maybeBoolean => typeof maybeBoolean === 'boolean';
 const isNumber = maybeNumber => typeof maybeNumber === 'number';
@@ -23,7 +24,16 @@ const buildSheetFromMatrix = (data, options = {}) => {
       if (data[R][C] === null) {
         continue; // eslint-disable-line
       }
-      const cell = {v: data[R][C]};
+      const val = data[R][C];
+      const cell = {};
+
+      if (typeof val === 'object' && val instanceof StyledContent) {
+          cell.v = val.content;
+          cell.s = val.style;
+      } else {
+          cell.v = val;
+      }
+
       const cellRef = XLSX.utils.encode_cell({c: C, r: R});
       if (isNumber(cell.v)) {
         cell.t = 'n';
@@ -40,7 +50,7 @@ const buildSheetFromMatrix = (data, options = {}) => {
       if (options.cellCallback) {
           options.cellCallback(cell, C, R);
       }
-      
+
       workSheet[cellRef] = cell;
     }
   }
