@@ -1,34 +1,14 @@
 {
   "name": "node-xlsx",
-  "author": "Olivier Louvignes <olivier@mg-crea.com>",
-  "version": "0.7.2",
+  "contributors": ["Olivier Louvignes <olivier@mg-crea.com>"],
+  "version": "1.7.2",
   "description": "NodeJS Excel files parser & builder",
-  "main": "src/index.js",
-  "scripts": {
-    "start": "npm run test:watch",
-    "test": "mocha",
-    "test:watch": "npm run test -- --watch",
-    "test:coverage": "nyc --reporter=lcov npm test -- --reporter dot && nyc report",
-    "lint": "eslint src/",
-    "compile": "rimraf lib/*; babel src/ -d lib/ -s",
-    "compile:watch": "npm run compile -- -w",
-    "prepublish": "npm run compile"
-  },
-  "repository": "github:mgcrea/node-xlsx",
+  "main": "index.js",
+  "scripts": {},
+  "repository": "github:mikuso/node-xlsx",
   "license": "Apache-2.0",
   "dependencies": {
     "xlsx-style": "^0.8.13"
-  },
-  "devDependencies": {
-    "codeclimate-test-reporter": "^0.3.3",
-    "eslint": "^3.3.1",
-    "eslint-config-airbnb-base": "^5.0.2",
-    "eslint-plugin-import": "^1.13.0",
-    "eslint-plugin-jsx-a11y": "^2.1.0",
-    "expect": "^1.20.2",
-    "mocha": "^3.0.2",
-    "nyc": "^8.1.0",
-    "rimraf": "^2.5.4"
   },
   "keywords": [
     "excel",
