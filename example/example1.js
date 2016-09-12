@@ -11,6 +11,10 @@ var xTitle = XLSX.style({
     font: {color: {rgb: 'FFFFFF'}}
 }, xCenter);
 
+var xHeader = XLSX.style({
+    font: {sz: 16, underline: true, bold: true}
+}, xTitle);
+
 var xMoney = XLSX.style({
     numFmt: `_-£* #,##0.00_-;-£* #,##0.00_-;_-@_-`,
     alignment: {vertical: 'center'}
@@ -27,6 +31,8 @@ var rows = [
 var head = xTitle(["SKU","Description","Qty","Price"]);
 
 var data = [];
+data.push(["example1.xlsx"], []);
+data.push([xHeader("Price List")]);
 data.push(head);
 rows.forEach(r=>data.push(r));
 
@@ -39,6 +45,9 @@ const sheet1 = {
             {wch: 20}, // description
             {wch: 8}, // moq
             {wch: 10} // price
+        ],
+        '!merges': [
+            {s: {c:0,r:2}, e: {c:3,r:2}}
         ]
     }
 };
