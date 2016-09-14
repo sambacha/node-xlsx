@@ -3,7 +3,7 @@
   "contributors": [
     "Olivier Louvignes <olivier@mg-crea.com>"
   ],
-  "version": "1.7.3",
+  "version": "1.8.0",
   "description": "NodeJS Excel files parser & builder",
   "main": "index.js",
   "scripts": {},
