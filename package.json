@@ -1,10 +1,10 @@
 {
-  "name": "node-xlsx",
+  "name": "mikuso-node-xlsx",
   "contributors": [
     "Olivier Louvignes <olivier@mg-crea.com>"
   ],
   "version": "1.8.0",
-  "description": "NodeJS Excel files parser & builder",
+  "description": "Fork of node-xlsx with styles & compression support",
   "main": "index.js",
   "scripts": {},
   "repository": "github:mikuso/node-xlsx",
