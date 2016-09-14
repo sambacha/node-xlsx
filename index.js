@@ -1,4 +1,4 @@
-var XLSX = require('xlsx-style');
+var XLSX = require('./lib/xlsx-style');
 var helpers = require('./helpers');
 var Workbook = require('./workbook');
 var _ = require('lodash');
@@ -16,7 +16,8 @@ function build(worksheets, write_opts = {}) {
     const defaults = {
         bookType: 'xlsx',
         bookSST: false,
-        type: 'binary'
+        type: 'buffer',
+        compression: 'DEFLATE'
     };
     const workBook = new Workbook();
     worksheets.forEach(worksheet => {

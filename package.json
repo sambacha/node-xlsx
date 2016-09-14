@@ -10,8 +10,7 @@
   "repository": "github:mikuso/node-xlsx",
   "license": "Apache-2.0",
   "dependencies": {
-    "lodash": "^4.15.0",
-    "xlsx-style": "^0.8.13"
+    "lodash": "^4.15.0"
   },
   "keywords": [
     "excel",

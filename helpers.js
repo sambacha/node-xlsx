@@ -1,4 +1,4 @@
-var XLSX = require('xlsx-style');
+var XLSX = require('./lib/xlsx-style');
 var StyledContent = require('./styledcontent');
 
 const isBoolean = maybeBoolean => typeof maybeBoolean === 'boolean';
