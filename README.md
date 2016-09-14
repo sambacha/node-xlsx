@@ -1,11 +1,5 @@
 # Node XLSX
 
-[![npm version](https://img.shields.io/npm/v/node-xlsx.svg?style=flat)](https://www.npmjs.com/package/node-xlsx) [![license](https://img.shields.io/github/license/mgcrea/node-xlsx.svg?style=flat)](https://tldrlegal.com/license/apache-license-2.0-(apache-2.0)) [![build status](http://img.shields.io/travis/mgcrea/node-xlsx/master.svg?style=flat)](http://travis-ci.org/mgcrea/node-xlsx) [![dependencies status](https://img.shields.io/david/mgcrea/node-xlsx.svg?style=flat)](https://david-dm.org/mgcrea/node-xlsx) [![devDependencies status](https://img.shields.io/david/dev/mgcrea/node-xlsx.svg?style=flat)](https://david-dm.org/mgcrea/node-xlsx#info=devDependencies) [![coverage status](http://img.shields.io/codeclimate/coverage/github/mgcrea/node-xlsx.svg?style=flat)](https://codeclimate.com/github/mgcrea/node-xlsx) [![climate status](https://img.shields.io/codeclimate/github/mgcrea/node-xlsx.svg?style=flat)](https://codeclimate.com/github/mgcrea/node-xlsx)
-
-Excel file parser/builder that relies on [js-xlsx](https://github.com/SheetJS/js-xlsx).
-
-
-
 ## Usage
 
 ### Examples
@@ -32,31 +26,9 @@ const data = [[1, 2, 3], [true, false, null, 'sheetjs'], ['foo', 'bar', new Date
 var buffer = xlsx.build([{name: "mySheetName", data: data}]); // Returns a buffer
 ```
 
+## Acknowledgements
 
-### Contributing
-
-Please submit all pull requests the against master branch. If your unit test contains javascript patches or features, you should include relevant unit tests. Thanks!
-
-
-### Available scripts
-
-| **Script** | **Description** |
-|----------|-------|
-| start | Alias of test:watch |
-| test | Run mocha unit tests |
-| test:watch | Run and watch mocha unit tests |
-| lint | Run eslint static tests |
-| compile | Compile the library |
-| compile:watch | Compile and watch the library |
-
-
-## Authors
-
-**Olivier Louvignes**
-
-+ http://olouv.com
-+ http://github.com/mgcrea
-
+Forked from [https://www.npmjs.com/package/node-xlsx](node-xlsx) by Olivier Louvignes
 
 ## Copyright and license
 
