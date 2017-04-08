@@ -53,3 +53,4 @@ Except where noted, this license applies to any and all software programs and as
 
 Inspired by SheetJS gist examples, Copyright (c) SheetJS.
 ```
+
